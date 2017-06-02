@@ -1,4 +1,4 @@
-package org.bildit.dao;
+package org.bildit.dao.user;
 
 import java.sql.SQLException;
 import java.util.List;

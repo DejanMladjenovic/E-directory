@@ -1,4 +1,4 @@
-package org.bildit.dao;
+package org.bildit.dao.user;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bildit.dao.ConnectionManager;
 import org.bildit.model.User;
 
 /**
