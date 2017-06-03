@@ -13,6 +13,6 @@ public interface UserBo {
 
 	boolean createUser(User user);
 
-	boolean readUser(String username, String password);
+	User readUser(String username);
 
 }

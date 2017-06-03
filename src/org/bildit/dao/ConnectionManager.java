@@ -18,7 +18,7 @@ public class ConnectionManager {
 	//Parameters for database
 	private final String USERNAME = "root";
 	private final String PASSWORD = "root";
-	private final String CONN_STRING = "jdbc:mysql://localhost:3306/imenik";
+	private final String CONN_STRING = "jdbc:mysql://localhost:3306/directory";
 	
 	//Connection instance
 	private Connection connection = null;

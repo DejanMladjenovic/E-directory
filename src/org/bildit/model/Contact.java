@@ -9,9 +9,9 @@ import java.io.Serializable;
  *
  */
 
-public class Contact implements Serializable {
+public class Contact implements Serializable{
 
-	// Data fields
+	//Data fields
 	private String firstName;
 	private String lastName;
 	private String phoneNumber;
@@ -19,13 +19,12 @@ public class Contact implements Serializable {
 	private String email;
 	private int idContact;
 
-	// No-args Constructor
+	//No-args Constructor
 	public Contact() {
 	}
 
-	// Constructor with specified values
-	public Contact(String firstName, String lastName, String phoneNumber,
-			String address, String email) {
+	//Constructor with specified values
+	public Contact(String firstName, String lastName, String phoneNumber, String address, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.phoneNumber = phoneNumber;
@@ -33,7 +32,8 @@ public class Contact implements Serializable {
 		this.email = email;
 	}
 
-	// Getters and Setters
+	
+	//Getters and Setters
 	public String getFirstName() {
 		return firstName;
 	}

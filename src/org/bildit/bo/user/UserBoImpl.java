@@ -32,19 +32,15 @@ public class UserBoImpl implements UserBo{
 	}
 
 	@Override
-	public boolean readUser(String username, String password) {
+	public User readUser(String username) {
 		
 		User user = null;
 		
 		try{
 			user = dao.readUser(username);
-			if(user.getUsername().equals(username) && user.getPassword().equals(password)){
-				return true;
-			}
 		} catch (SQLException | NullPointerException e) {
 			e.printStackTrace();
-			return false;
 		}
-		return false;
+		return user;
 	}
 }
