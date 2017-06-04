@@ -6,10 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contacts</title>
-<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Lobster|Roboto&effect=fire|outline" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Lobster|Roboto&effect=fire|outline" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -58,12 +57,12 @@
 									<td><c:out value="${contact.email}" /></td>
 									<td id="update">
 										<form action="UpdateServlet" method="get">
-											<button class="btn btn-primary" name="update" value="${contact.idContact}">Update</button>
+											<button class="btn btn-primary" id="update" name="update" value="${contact.idContact}">Update</button>
 										</form>
 									</td>
 									<td>
 										<form action="DeleteServlet" method="post">
-											<button class="btn btn-danger" name="delete" value="${contact.idContact}">Delete</button>
+											<button class="btn btn-danger" id="delete" name="delete" value="${contact.idContact}">Delete</button>
 										</form>
 									</td>
 								</tr>
